@@ -1,0 +1,23 @@
+.Record {
+  margin: 25px;
+  border: 260px solid #222;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(30, 30, 30, .5);
+  // animation: spin 4s infinite linear;
+  position: relative;
+  &__image {
+    width: 260px;
+    height: 260px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 100px;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg)
+  }
+}
