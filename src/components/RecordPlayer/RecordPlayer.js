@@ -51,7 +51,7 @@ RecordPlayer.propTypes = {
 };
 RecordPlayer.defaultProps = {
   isActive: false,
-  discImgUrl: 'https://fsa.zobj.net/crop.php?r=56U-lN6Zll_btB4Dr4TdCAeLCiiW9UsBvhcBv7uIsqcuLLWRhak5o2zVU5Qo1PkVFRBoJQmP7xhKO7Phq8-bF5rEmfTyKQIBY_xHr850OjGL0FlU13h4ZGXTIsPjk8IGfHgS3lqRvafHuNB8',
+  discImgUrl: 'http://avante.biz/wp-content/uploads/Gorillaz-HD-Wallpapers/Gorillaz-HD-Wallpapers-011.jpg',
 };
 
 export default RecordPlayer;

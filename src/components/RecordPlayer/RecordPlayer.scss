@@ -33,8 +33,8 @@ $darkMetal: #2C2B3C;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 12px 8px rgba(30, 30, 30, .2);
-    // animation: spin 4s infinite linear;
+    box-shadow: 0 2px 12px 8px rgba(30, 30, 30, .3);
+    animation: spin 6s infinite linear;
     &__hole {
       background-color: #EE964B;
       width: 120px;
@@ -49,13 +49,14 @@ $darkMetal: #2C2B3C;
   position: absolute;
   top: 120px;
   left: 35px;
-  filter: drop-shadow(0 4px 7px rgba(30, 30, 30, .5));
+  filter: drop-shadow(-5px 8px 2px rgba(20, 20, 20, .7));
+  animation: scale 2s infinite linear;
   &__line {
     width: 450px;
     height: 40px;
     background-color: $darkArsenic;
     border: 2px solid $white;
-    border-radius: 25px;
+    border-radius: 5px;
     transform: rotate(20deg);
     display: flex;
     justify-content: center;
@@ -69,12 +70,27 @@ $darkMetal: #2C2B3C;
     }
   }
   &__platform {
+    width: 60px;
+    height: 60px;
+    background-color: $darkMetal;
     &__needle {}
   }
 }
 
 @keyframes spin {
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.95);
   }
 }

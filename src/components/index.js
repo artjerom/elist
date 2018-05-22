@@ -1,1 +1,1 @@
-export * from './RecordPlayer';
+export { default as RecordPlayer } from './RecordPlayer';
