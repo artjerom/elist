@@ -1,18 +1,75 @@
-.Record {
-  margin: 25px;
-  border: 260px solid #222;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 0 4px 4px rgba(30, 30, 30, .5);
-  // animation: spin 4s infinite linear;
+$yellowColor: #EE964B;
+$darkMain: #2A2B2E;
+$white: #FFFA;
+$darkArsenic: #403F4c;
+$darkMetal: #2C2B3C;
+
+.RecordPlayer {
   position: relative;
-  &__image {
-    width: 260px;
-    height: 260px;
-    transform: rotate(45deg);
-    position: absolute;
-    bottom: 100px;
+  &__player {
+    width: 640px;
+    height: 640px;
+    //background-color: #2A2B2E;
+    border-radius: 4px;
+    display: flex;
+  }
+}
+
+.RecordPlayerPlatform {
+  width: 90%;
+  height: 90%;
+  background-color: #EE964B;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__disc {
+    //position: absolute;
+    background-position: center center;
+    width: 96%;
+    height: 96%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 12px 8px rgba(30, 30, 30, .2);
+    // animation: spin 4s infinite linear;
+    &__hole {
+      background-color: #EE964B;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: inset 0 2px 12px 8px rgba(30, 30, 30, .5);
+    }
+  }
+}
+
+.RecordPlayerCartrige {
+  position: absolute;
+  top: 120px;
+  left: 35px;
+  filter: drop-shadow(0 4px 7px rgba(30, 30, 30, .5));
+  &__line {
+    width: 450px;
+    height: 40px;
+    background-color: $darkArsenic;
+    border: 2px solid $white;
+    border-radius: 25px;
+    transform: rotate(20deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__block {}
+    &__line {
+      width: 95%;
+      height: 50%;
+      border-radius: 15px;
+      background-color: #222;
+    }
+  }
+  &__platform {
+    &__needle {}
   }
 }
 
