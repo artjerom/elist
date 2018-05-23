@@ -6,9 +6,10 @@ $darkMetal: #2C2B3C;
 
 .RecordPlayer {
   position: relative;
+  opacity: .8;
   &__player {
-    width: 640px;
-    height: 640px;
+    width: 100vh;
+    height: 100vh;
     //background-color: #2A2B2E;
     border-radius: 4px;
     display: flex;
@@ -34,11 +35,11 @@ $darkMetal: #2C2B3C;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 12px 8px rgba(30, 30, 30, .3);
-    animation: spin 6s infinite linear;
+    // animation: spin 6s infinite linear;
     &__hole {
       background-color: #EE964B;
-      width: 120px;
-      height: 120px;
+      width: 17%;
+      height: 17%;
       border-radius: 50%;
       box-shadow: inset 0 2px 12px 8px rgba(30, 30, 30, .5);
     }
@@ -47,13 +48,13 @@ $darkMetal: #2C2B3C;
 
 .RecordPlayerCartrige {
   position: absolute;
-  top: 120px;
-  left: 35px;
+  top: 20%;
+  left: 10%;
   filter: drop-shadow(-5px 8px 2px rgba(20, 20, 20, .7));
   animation: scale 2s infinite linear;
   &__line {
-    width: 450px;
-    height: 40px;
+    min-width: 450px;
+    min-height: 40px;
     background-color: $darkArsenic;
     border: 2px solid $white;
     border-radius: 5px;
@@ -63,8 +64,8 @@ $darkMetal: #2C2B3C;
     align-items: center;
     &__block {}
     &__line {
-      width: 95%;
-      height: 50%;
+      min-width: 95%;
+      min-height: 50%;
       border-radius: 15px;
       background-color: #222;
     }
@@ -73,6 +74,11 @@ $darkMetal: #2C2B3C;
     width: 60px;
     height: 60px;
     background-color: $darkMetal;
+    transform: rotate(60deg);
+    position: absolute;
+    bottom: -195%;
+    right: -5%;
+    border: 2px solid $white;
     &__needle {}
   }
 }

@@ -7,7 +7,7 @@ class RecordPlayer extends Component {
     super(props);
 
     this.state = {
-      
+      isActive: props.isActive,
     };
   }
 
